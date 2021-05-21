@@ -1,0 +1,34 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "Behavior",
+"language": "GDScript",
+"path": "res://addons/Behaviors/Behavior.gd"
+}, {
+"base": "Node",
+"class": "BehaviorContainer",
+"language": "GDScript",
+"path": "res://src/Player/Behaviors.gd"
+} ]
+_global_script_class_icons={
+"Behavior": "",
+"BehaviorContainer": ""
+}
+
+[application]
+
+config/name="PlatformerTemplate"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
