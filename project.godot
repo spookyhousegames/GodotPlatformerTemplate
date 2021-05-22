@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Actor",
+"language": "GDScript",
+"path": "res://addons/Util/Actor/Actor.gd"
+}, {
 "base": "Node",
 "class": "Behavior",
 "language": "GDScript",
@@ -17,11 +22,30 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "BehaviorContainer",
 "language": "GDScript",
-"path": "res://src/Player/Behaviors.gd"
+"path": "res://addons/Util/BehaviorContainer/Behaviors.gd"
+}, {
+"base": "Reference",
+"class": "FSM",
+"language": "GDScript",
+"path": "res://addons/Util/FSM/FSM.gd"
+}, {
+"base": "Behavior",
+"class": "Move2D",
+"language": "GDScript",
+"path": "res://addons/Behaviors/bh_Move2D.gd"
+}, {
+"base": "Reference",
+"class": "SensorContainer",
+"language": "GDScript",
+"path": "res://addons/Util/SensorContainer/SensorContainer.gd"
 } ]
 _global_script_class_icons={
+"Actor": "",
 "Behavior": "",
-"BehaviorContainer": ""
+"BehaviorContainer": "",
+"FSM": "",
+"Move2D": "",
+"SensorContainer": ""
 }
 
 [application]
